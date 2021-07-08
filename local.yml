@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  become: true
+  roles:
+    - { role: base } 
+  # vars_prompt:
+  #   - name: username
+  #     prompt: "Enter username: "
+  #   - name: password
+  #     prompt: "Enter password: "

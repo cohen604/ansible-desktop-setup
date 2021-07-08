@@ -1,0 +1,6 @@
+user:
+    uid: 1000
+    shell: /usr/bin/zsh
+
+base_packages:
+    - git
