@@ -8,7 +8,7 @@
     - { role: base, tags: ["base"] }
     - { role: video-drivers, tags: ["video-drivers"] }
     - { role: xorg, tags: ["xorg"] }
-    - { role: aur, tags: ["aur"] }
+    - { role: aur, tags: ["aur"], become_user: "{{ username }}" }
     - { role: bspwm, tags: ["bspwm"], become_user: "{{ username }}" }
   vars_prompt:
     - name: username
