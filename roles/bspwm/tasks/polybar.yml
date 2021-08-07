@@ -1,6 +1,5 @@
 ---
-- name: Install Polybar
-  aur:
+- aur:
     name: polybar
     use: yay
     state: present
