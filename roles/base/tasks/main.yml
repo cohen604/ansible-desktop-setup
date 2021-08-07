@@ -5,3 +5,4 @@
     state: present
 
 - include: user.yml
+- include: sudo.yml
