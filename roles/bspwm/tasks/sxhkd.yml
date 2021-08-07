@@ -1,0 +1,15 @@
+---
+- name: Install sxhkd
+  pacman:
+    name: sxhkd
+    state: present
+
+- name: Create sxhkd config dir
+  file:
+    path: ~/.config/sxhkd
+    state: directory
+
+- name: Copy sxhkdrc config
+  copy:
+    src: sxhkdrc
+    dest: ~/.config/sxhkd/sxhkdrc

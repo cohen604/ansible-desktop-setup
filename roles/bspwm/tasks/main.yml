@@ -4,33 +4,21 @@
     name: bspwm
     state: present
 
-- name: Install sxhkd
-  pacman:
-    name: sxhkd
-    state: present
-
 - name: Edit xinit
   lineinfile:
     path: /etc/X11/xinit/xinitrc
     regexp: "^exec "
     line: exec bspwm
 
-- name: Create sxhkd config dir
-  file:
-    path: ~/.config/sxhkd
-    state: directory
-
 - name: Create bspwm config dir
   file:
     path: ~/.config/bspwm
     state: directory
 
-- name: Copy sxhkdrc config
-  copy:
-    src: sxhkdrc
-    dest: ~/.config/sxhkd/sxhkdrc
-
 - name: Copy bspwmrc config
   copy:
     src: bspwmrc
     dest: ~/.config/bspwm/bspwmrc
+
+- include: sxhkd.yml
+- include: wallpaper.yml

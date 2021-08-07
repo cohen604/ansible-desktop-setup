@@ -1,0 +1,15 @@
+---
+- name: Install feh
+  pacman:
+    name: feh
+    state: present
+
+- name: Create Pictures dir
+  file:
+    path: ~/Pictures
+    state: directory
+
+- name: Copy wallpaper to pictures
+  copy:
+    src: wallpaper.png
+    dest: ~/Pictures/wallpaper
