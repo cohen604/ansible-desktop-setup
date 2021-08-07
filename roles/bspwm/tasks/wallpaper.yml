@@ -13,4 +13,4 @@
 - name: Copy wallpaper to pictures
   copy:
     src: wallpaper.png
-    dest: ~/Pictures/wallpaper
+    dest: ~/Pictures/wallpaper.png
