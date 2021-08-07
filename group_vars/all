@@ -18,6 +18,11 @@ base_packages:
     - vim
     - zsh
 
+xorg_packages:
+    - xorg-server
+    - xorg-xinit
+    - xorg-setxkbmap
+
 base_groups:
     - wheel
     - docker

@@ -5,6 +5,7 @@
     - community.general
   roles:
     - { role: base, tags: ["base"] }
+    - { role: xorg, tags: ["xorg"] }
   vars_prompt:
     - name: username
       prompt: "Enter username: "
