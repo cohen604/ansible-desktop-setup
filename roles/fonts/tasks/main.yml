@@ -1,0 +1,6 @@
+---
+- name: Install fonts from AUR
+  aur:
+    name: "{{ aur_fonts }}"
+    use: yay
+    state: present

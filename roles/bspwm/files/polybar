@@ -31,7 +31,6 @@ light-gray = #565c64
 
 [bar/tokyodark]
 tray-position = right
-monitor = eDP-1
 width =  100%
 height = 23
 padding-left = 1

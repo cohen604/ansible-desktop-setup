@@ -33,3 +33,10 @@ video_drivers:
 base_groups:
     - wheel
     - docker
+
+aur_fonts:
+    - nerd-fonts-hack
+    - nerd-fonts-jetbrains-mono
+    - ttf-material-design-icons
+    - ttf-unifont
+
