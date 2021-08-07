@@ -5,6 +5,7 @@
     state: present
 
 - name: Edit xinit
+  become_user: root
   lineinfile:
     path: /etc/X11/xinit/xinitrc
     regexp: "^exec "
