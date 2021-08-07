@@ -24,6 +24,12 @@ xorg_packages:
     - xorg-setxkbmap
     - xorg-xsetroot
 
+video_drivers:
+    intel:
+        - mesa
+        - xf86-video-intel
+        - vulkan-intel
+
 base_groups:
     - wheel
     - docker

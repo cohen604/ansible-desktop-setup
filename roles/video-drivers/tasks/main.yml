@@ -1,0 +1,5 @@
+---
+- name: Install video driver packages
+  pacman:
+    name: "{{ video_drivers.intel }}"
+    state: present
