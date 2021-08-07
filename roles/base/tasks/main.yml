@@ -1,5 +1,7 @@
 ---
 - name: Install base packages
-  package:
+  pacman:
     name: "{{ base_packages }}"
     state: present
+
+- include: user.yml

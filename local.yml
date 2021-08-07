@@ -1,10 +1,15 @@
 ---
 - hosts: localhost
   become: true
+  collections:
+    - community.general
   roles:
-    - { role: base } 
-  # vars_prompt:
-  #   - name: username
-  #     prompt: "Enter username: "
-  #   - name: password
-  #     prompt: "Enter password: "
+    - { role: base, tags: ["base"] }
+  vars_prompt:
+    - name: username
+      prompt: "Enter username: "
+      private: no
+    - name: password
+      prompt: "Enter password: "
+      unsafe: yes
+      private: yes

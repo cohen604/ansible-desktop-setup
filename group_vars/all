@@ -3,4 +3,16 @@ user:
     shell: /usr/bin/zsh
 
 base_packages:
+    - alacritty
+    - ansible
+    - ansible-lint
+    - base-devel
     - git
+    - man-db
+    - man-pages
+    - neovim
+    - networkmanager
+    - openssh
+    - texinfo
+    - vim
+    - zsh
