@@ -1,5 +1,6 @@
 ---
 - name: Install feh
+  become_user: root
   pacman:
     name: feh
     state: present
