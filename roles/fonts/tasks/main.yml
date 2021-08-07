@@ -4,3 +4,5 @@
     name: "{{ aur_fonts }}"
     use: yay
     state: present
+  tags:
+    - aur
