@@ -7,12 +7,18 @@ base_packages:
     - ansible
     - ansible-lint
     - base-devel
+    - docker
     - git
     - man-db
     - man-pages
     - neovim
     - networkmanager
     - openssh
+    - sudo
     - texinfo
     - vim
     - zsh
+
+base_groups:
+    - wheel
+    - docker
