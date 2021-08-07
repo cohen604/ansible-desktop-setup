@@ -4,8 +4,8 @@
     name: polybar
     use: yay
     state: present
-    tags:
-      - yay
+  tags:
+    - yay
 
 - name: Create polybar config dir
   file:
