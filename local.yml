@@ -1,13 +1,13 @@
 ---
 - hosts: localhost
   become: true
-  become_user: "{{ username }}"
+
   collections:
     - community.general
   roles:
-    - { role: base, tags: ["base"], become_user: root }
+    - { role: base, tags: ["base"] }
     - { role: xorg, tags: ["xorg"] }
-    - { role: bspwm, tags: ["bspwm"] }
+    - { role: bspwm, tags: ["bspwm"], become_user: "{{ username }}" }
   vars_prompt:
     - name: username
       prompt: "Enter username: "
