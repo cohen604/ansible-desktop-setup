@@ -1,5 +1,6 @@
 ---
-- aur:
+- name: Install yay
+  aur:
     name: yay
     use: makepkg
     state: present
