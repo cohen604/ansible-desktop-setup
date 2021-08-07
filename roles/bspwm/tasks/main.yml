@@ -15,6 +15,16 @@
     regexp: "^exec "
     line: exec bspwm
 
+- name: Create sxhkd config dir
+  file:
+    path: ~/.config/sxhkd
+    state: directory
+
+- name: Create bspwm config dir
+  file:
+    path: ~/.config/bspwm
+    state: directory
+
 - name: Copy sxhkdrc config
   copy:
     src: sxhkdrc
