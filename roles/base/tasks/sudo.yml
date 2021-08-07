@@ -7,6 +7,6 @@
 - name: Copy sudo config
   copy:
     src: sudoers
-    path: /etc/sudoers
+    dest: /etc/sudoers
     mode: 0440
     validate: visudo -cf %s
