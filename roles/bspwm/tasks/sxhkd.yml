@@ -13,3 +13,4 @@
   copy:
     src: sxhkdrc
     dest: ~/.config/sxhkd/sxhkdrc
+    mode: 0755

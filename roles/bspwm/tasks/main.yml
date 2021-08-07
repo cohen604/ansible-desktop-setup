@@ -20,6 +20,8 @@
   copy:
     src: bspwmrc
     dest: ~/.config/bspwm/bspwmrc
+    mode: 0755
 
 - include: sxhkd.yml
 - include: wallpaper.yml
+- include: polybar.yml
