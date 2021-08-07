@@ -3,7 +3,7 @@
 #
 # terminal emulator
 alt + Return
-    prime-run alacritty
+    alacritty
     # alacritty -e "tmux attach -t $(bspc query -D -d focused --names) || tmux new-session -A -s $(bspc query -D -d focused --names)"
     # kitty sh -c "tmux attach -t $(bspc query -D -d focused --names) || tmux new-session -A -s $(bspc query -D -d focused --names)"
 
