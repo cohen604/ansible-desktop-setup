@@ -1,0 +1,26 @@
+---
+- name: Install bspwm
+  pacman:
+    name: bspwm
+    state: present
+
+- name: Install sxhkd
+  pacman:
+    name: sxhkd
+    state: present
+
+- name: Edit xinit
+  lineinfile:
+    path: /etc/X11/xinit/xinitrc
+    regexp: "^exec "
+    line: exec bspwm
+
+- name: Copy sxhkdrc config
+  copy:
+    src: sxhkdrc
+    dest: ~/.config/sxhkd/sxhkdrc
+
+- name: Copy bspwmrc config
+  copy:
+    src: bspwmrc
+    dest: ~/.config/bspwm/bspwmrc
