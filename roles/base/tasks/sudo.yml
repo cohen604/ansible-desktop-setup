@@ -1,0 +1,12 @@
+---
+- name: Install Sudo
+  pacman:
+    name: sudo
+    state: present
+
+- name: Copy sudo config
+  copy:
+    src: sudoers
+    path: /etc/sudoers
+    mode: 0440
+    validate: visudo -cf %s
