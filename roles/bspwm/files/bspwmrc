@@ -3,7 +3,7 @@
 feh --bg-scale ~/Pictures/wallpaper.png
 xsetroot -cursor_name left_ptr &
 
-#"$HOME/.config/polybar/launch.sh"
+polybar tokyodark &
 #"$HOME/.config/picom/launch.sh"
 #dunst &
 
