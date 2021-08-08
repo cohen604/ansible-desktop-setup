@@ -1,0 +1,32 @@
+---
+- name: Install neovim
+  become_user: root
+  pacman:
+    name: neovim
+    state: present
+
+- name: Create nvim config dir
+  file:
+    path: ~/.config/nvim
+    state: directory
+
+- name: Create packer download path
+  file:
+    path: ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+    recurse: true
+    state: directory
+
+- name: Clone packer git
+  git:
+    repo: https://github.com/wbthomason/packer.nvim
+    dest: ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
+- name: Copy init config
+  copy:
+    src: init.lua
+    dest: ~/.config/nvim/init.lua
+
+- name: Copy lua folder
+  copy:
+    src: lua
+    dest: ~/.config/nvim/
