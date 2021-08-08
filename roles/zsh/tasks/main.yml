@@ -1,0 +1,26 @@
+---
+- name: Install zsh
+  become_user: root
+  pacman:
+    name: zsh
+    state: present
+
+- name: Create Zinit dir
+  file:
+    path: ~/.zinit
+    state: directory
+
+- name: Download Zinit
+  git:
+    repo: https://github.com/zdharma/zinit.git
+    dest: ~/.zinit/bin
+
+- name: Downlod Prezto
+  git:
+    repo: https://github.com/sorin-ionescu/prezto.git
+    dest: ~/.zprezto
+
+- name: Copy zshrc config
+  copy:
+    src: zshrc
+    dest: ~/.zshrc

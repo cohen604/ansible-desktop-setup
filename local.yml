@@ -12,6 +12,7 @@
     - { role: fonts, tags: ["fonts"], become_user: "{{ username }}" }
     - { role: bspwm, tags: ["bspwm"], become_user: "{{ username }}" }
     - { role: alacritty, tags: ["alacritty"], become_user: "{{ username }}" }
+    - { role: zsh, tags: ["zsh"], become_user: "{{ username }}" }
     - { role: browsers, tags: ["browsers"], become_user: "{{ username }}" }
   vars_prompt:
     - name: username
