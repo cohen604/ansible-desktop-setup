@@ -38,6 +38,6 @@ base_groups:
 aur_fonts:
     - nerd-fonts-hack
     - nerd-fonts-jetbrains-mono
-    - ttf-material-design-icons
+    - ttf-material-design-icons-git
     - ttf-unifont
 
