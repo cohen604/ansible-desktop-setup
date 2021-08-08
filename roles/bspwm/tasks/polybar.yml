@@ -7,6 +7,11 @@
   tags:
     - yay
 
+- name: Install bc
+  pacman:
+    name: bc
+    state: present
+
 - name: Create polybar config dir
   file:
     path: ~/.config/polybar
