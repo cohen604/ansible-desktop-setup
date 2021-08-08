@@ -5,6 +5,12 @@
     name: neovim
     state: present
 
+- name: Install nodejs
+  become_user: root
+  pacman:
+    name: nodejs
+    state: present
+
 - name: Create nvim config dir
   file:
     path: ~/.config/nvim
