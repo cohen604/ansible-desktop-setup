@@ -3,7 +3,8 @@
 feh --bg-scale ~/Pictures/wallpaper.png
 xsetroot -cursor_name left_ptr &
 
-killall -q polybar && sleep 2 && polybar tokyodark &
+killall -q polybar && sleep 1
+polybar tokyodark &
 #"$HOME/.config/picom/launch.sh"
 #dunst &
 
