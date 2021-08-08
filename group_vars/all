@@ -2,7 +2,6 @@ user:
     shell: /usr/bin/zsh
 
 base_packages:
-    - alacritty
     - ansible
     - ansible-lint
     - base-devel
