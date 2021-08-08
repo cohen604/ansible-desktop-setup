@@ -1,5 +1,6 @@
 ---
 - name: Install Rofi
+  become_user: root
   pacman:
     name: rofi
     state: present
