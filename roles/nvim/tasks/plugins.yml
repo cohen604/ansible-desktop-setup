@@ -1,0 +1,6 @@
+---
+- name: Install plugins
+  command: nvim +PackerInstall +qa
+
+- name: Install coc-rust-analyzer
+  command: nvim -c CocIsntall\ coc-rust-analyzer +qa
