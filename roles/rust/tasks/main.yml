@@ -2,7 +2,6 @@
 - name: Run rustup Installer
   command:
     cmd: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --profile default
-    stding: "{{ rustup_installer.content }}"
 
 - name: Install rust-analyzer
   become_user: root
