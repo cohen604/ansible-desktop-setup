@@ -9,6 +9,7 @@ zinit light spaceship-prompt/spaceship-prompt
 
 alias cat="bat"
 alias dig="drill"
+alias vim="nvim"
 
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
