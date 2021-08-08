@@ -1,0 +1,15 @@
+---
+- name: Install Alacritty
+  become_user: root
+  pacman:
+    name: alacritty
+
+- name: Create Alacritty config dir
+  file:
+    path: ~/.config/alacritty
+    state: directory
+
+- name: Copy Alacritty config
+  copy:
+    src: alacritty
+    dest: ~/.config/alacritty/alacritty.yml
