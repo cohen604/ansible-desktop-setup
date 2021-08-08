@@ -5,6 +5,7 @@ base_packages:
     - ansible
     - ansible-lint
     - base-devel
+    - bat
     - docker
     - git
     - man-db
