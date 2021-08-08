@@ -8,6 +8,7 @@
     - yay
 
 - name: Install bc
+  become_user: root
   pacman:
     name: bc
     state: present
