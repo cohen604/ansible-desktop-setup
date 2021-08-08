@@ -10,7 +10,7 @@ local function init()
 
     use 'dense-analysis/ale'
     use 'rust-lang/rust.vim'
-    use 'fannheyward/coc-rust-analyzer'
+    use 'neoclide/coc.nvim'
 
     use 'tiagovla/tokyodark.nvim' 
 end
