@@ -1,0 +1,6 @@
+---
+- name: Install Firefox
+  become_user: root
+  pacman:
+    name: firefox
+    state: present
