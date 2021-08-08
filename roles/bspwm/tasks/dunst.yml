@@ -5,6 +5,12 @@
     name: dunst
     state: present
 
+- name: Install libnotify
+  become_user: root
+  pacman:
+    name: libnotify
+    state: present
+
 - name: Create dinst config dir
   file:
     path: ~/.config/dunst
