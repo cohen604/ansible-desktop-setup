@@ -1,6 +1,6 @@
 ---
 - name: Install plugins
-  command: nvim +PackerInstall +qa
+  command: nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerInstall'
 
 - name: Install coc-rust-analyzer
-  command: nvim -c CocIsntall\ coc-rust-analyzer +qa
+  command: nvim --headless -c 'CocInstall coc-rust-analyzer' -c 'qa!'
