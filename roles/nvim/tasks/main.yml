@@ -42,3 +42,5 @@
   copy:
     src: lua
     dest: ~/.config/nvim/
+
+- include: plugins.yml
