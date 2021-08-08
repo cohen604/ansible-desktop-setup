@@ -11,6 +11,12 @@
     name: nodejs
     state: present
 
+- name: Install npm
+  become_user: root
+  pacman:
+    name: npm
+    state: present
+
 - name: Create nvim config dir
   file:
     path: ~/.config/nvim
