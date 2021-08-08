@@ -1,0 +1,16 @@
+---
+- name: Install dunst
+  become_user: root
+  pacman:
+    name: dunst
+    state: present
+
+- name: Create dinst config dir
+  file:
+    path: ~/.config/dunst
+    state: directory
+
+- name: Copy dunstrc config
+  copy:
+    src: dunstrc
+    dest: ~/.config/dunst/dunstrc
