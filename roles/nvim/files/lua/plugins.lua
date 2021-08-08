@@ -10,7 +10,7 @@ local function init()
 
     use 'dense-analysis/ale'
     use 'rust-lang/rust.vim'
-    use 'neoclide/coc.nvim'
+    use { 'neoclide/coc.nvim', brnach = 'release' }
 
     use 'tiagovla/tokyodark.nvim' 
 end
