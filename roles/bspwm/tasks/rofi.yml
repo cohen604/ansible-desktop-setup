@@ -1,0 +1,15 @@
+---
+- name: Install Rofi
+  pacman:
+    name: rofi
+    state: present
+
+- name: Create rofi config dir
+  file:
+    path: ~/.config/rofi
+    state: directory
+
+- name: Copy rofi config file
+  copy:
+    src: rofi
+    dest: ~/.config/rofi/config.rasi

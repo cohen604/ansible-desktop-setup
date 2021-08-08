@@ -25,3 +25,4 @@
 - include: sxhkd.yml
 - include: wallpaper.yml
 - include: polybar.yml
+- include: rofi.yml
