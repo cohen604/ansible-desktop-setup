@@ -5,11 +5,7 @@ xsetroot -cursor_name left_ptr &
 
 killall -q polybar && sleep 1
 polybar tokyodark &
-
-killall -q picom && sleep 1
-picom --experimental-backends --backend glx &
-
-killall -q dunst && sleep 1
+$HOME/.config/picom/launch.sh
 dunst &
 
 pgrep -x sxhkd >/dev/null || sxhkd &
