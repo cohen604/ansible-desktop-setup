@@ -1,0 +1,16 @@
+---
+- name: Install Picom
+  become_user: root
+  pacman:
+    name: picom
+    state: present
+
+- name: Create picom config dir
+  file:
+    path: ~/.config/picom
+    state: directory
+
+- name: Copy picom config
+  copy:
+    src: picom
+    dest: ~/.config/picom/picom.conf

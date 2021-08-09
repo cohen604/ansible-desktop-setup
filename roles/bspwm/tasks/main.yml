@@ -27,3 +27,4 @@
 - include: polybar.yml
 - include: rofi.yml
 - include: dunst.yml
+- include: picom.yml
