@@ -30,6 +30,7 @@ video_drivers:
         - mesa
         - xf86-video-intel
         - vulkan-intel
+        - mesa
 
 base_groups:
     - wheel
