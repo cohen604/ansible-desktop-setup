@@ -13,4 +13,4 @@
 - name: Copy picom config
   copy:
     src: picom
-    dest: ~/.config/picom/
+    dest: ~/.config/picom
