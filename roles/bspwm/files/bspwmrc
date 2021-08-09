@@ -3,11 +3,11 @@
 feh --bg-scale ~/Pictures/wallpaper.png
 xsetroot -cursor_name left_ptr &
 
+killall -q picom && sleep 1
+picom --experimental-backends --backend xrender &
+
 killall -q polybar && sleep 1
 polybar tokyodark &
-
-#killall -q picom && sleep 1
-#picom --experimental-backends --backend xrender &
 
 dunst &
 
