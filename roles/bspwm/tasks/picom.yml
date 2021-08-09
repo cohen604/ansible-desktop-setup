@@ -5,11 +5,6 @@
     name: picom
     state: present
 
-- name: Create picom config dir
-  file:
-    path: ~/.config/picom
-    state: directory
-
 - name: Copy picom config
   copy:
     src: picom
