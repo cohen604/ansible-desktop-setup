@@ -41,3 +41,5 @@ aur_fonts:
     - ttf-material-design-icons-git
     - ttf-unifont
 
+pentest_aur_packages:
+    - burpsuite

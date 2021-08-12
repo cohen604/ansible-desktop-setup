@@ -16,6 +16,7 @@
     - { role: rust, tags: ["rust"], become_user: "{{ username }}" }
     - { role: nvim, tags: ["nvim"], become_user: "{{ username }}" }
     - { role: browsers, tags: ["browsers"], become_user: "{{ username }}" }
+    - { role: pentest, tags: ["pentest"], become_user: "{{ username }}" }
   vars_prompt:
     - name: username
       prompt: "Enter username: "
