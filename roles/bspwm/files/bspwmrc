@@ -39,5 +39,5 @@ bspc config focus_follows_pointer true
 
 if command -v spice-vdagent &> /dev/null
 then
-    spice-vdagent
+    spice-vdagent &
 fi
