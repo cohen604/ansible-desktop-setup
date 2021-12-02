@@ -7,10 +7,16 @@ zinit light zdharma/fast-syntax-highlighting
 zinit light spaceship-prompt/spaceship-prompt
 
 
+HISTFILE=~/.histfile
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
 alias cat="bat"
 alias dig="drill"
 alias vim="nvim"
 
+setxkbmap -option caps:escape
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 	exec startx
