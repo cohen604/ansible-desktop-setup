@@ -12,7 +12,7 @@
 
 - name: Download Zinit
   git:
-    repo: https://github.com/zdharma/zinit.git
+    repo: https://github.com/zdharma-continuum/zinit.git
     dest: ~/.zinit/bin
 
 - name: Downlod Prezto
