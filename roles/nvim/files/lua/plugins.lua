@@ -8,9 +8,13 @@ local function init()
     packer.reset()
     use 'wbthomason/packer.nvim'
 
-    use 'dense-analysis/ale'
     use 'rust-lang/rust.vim'
-    use { 'neoclide/coc.nvim', branch = 'release' }
+    use 'neovim/nvim-lspconfig'
+    use 'simrat39/rust-tools.nvim'
+    use 'hrsh7th/nvim-compe'
+    use 'vimwiki/vimwiki'
+    use 'junegunn/fzf.vim'
+    use 'tpope/vim-surround'
 
     use 'tiagovla/tokyodark.nvim' 
 end
