@@ -1,6 +1,6 @@
 ---
 - name: Install Polybar
-  aur:
+  kewlfft.aur.aur:
     name: polybar
     use: yay
     state: present

@@ -1,6 +1,6 @@
 ---
 - name: Install fonts from AUR
-  aur:
+  kewlfft.aur.aur:
     name: "{{ aur_fonts }}"
     use: yay
     state: present
