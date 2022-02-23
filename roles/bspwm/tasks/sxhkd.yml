@@ -1,5 +1,6 @@
 ---
 - name: Install sxhkd
+  become_user: root
   pacman:
     name: sxhkd
     state: present

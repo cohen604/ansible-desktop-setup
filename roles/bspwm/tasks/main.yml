@@ -1,5 +1,6 @@
 ---
 - name: Install bspwm
+  become_user: root
   pacman:
     name: bspwm
     state: present
